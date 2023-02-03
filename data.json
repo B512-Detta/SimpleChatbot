@@ -1,0 +1,73 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hai", "Apa Kabar?", "Apakah saya bisa bertanya?"],
+         "responses": ["Hai, senang melihatmu lagi","Hai dengan psikiater chatbot, apa yang bisa saya bantu?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Sampai jumpa", "Mari kita berjumpa lagi", "Selamat tinggal", "Senang berbicara denganmu, sampai jumpa"],
+         "responses": ["Sampai jumpa!", "Semoga harimu menyenangkan", "Sampai jumpa, datanglah kembali"],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Terima kasih", "Ini sangat membantu", "Luar biasa, terimakasih", "Terimakasih, sudah membantu saya"],
+         "responses": ["Senang membantumu!", "Dengan senang hati membantumu"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Maaf tidak dapat memahami anda", "Tolong kasih saya info yang lebih jelas", "Tidak yakin saya mengerti"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["Bagaimana kamu membantu saya?", "Apa yang bisa kamu lakukan?", "Bantuan apa yang anda berikan?", "Bagaimana anda bisa membantu?", "Dukungan apa yang ditawarkan?"],
+         "responses": ["Saya dapat membantu Anda menjawab pertanyaan tentang kesehatan mental"],
+         "context": [""]
+        },
+        {"tag": "mean_have_mental_illness",
+         "patterns": ["Apa artinya memiliki penyakit mental?"],
+         "responses": ["Penyakit mental adalah kondisi kesehatan yang mengganggu pikiran, emosi, hubungan, dan fungsi sehari-hari seseorang. Mereka terkait dengan kesusahan dan berkurangnya kapasitas untuk terlibat dalam aktivitas biasa kehidupan sehari-hari.Penyakit mental termasuk dalam rangkaian tingkat keparahan: beberapa cukup ringan dan hanya mengganggu beberapa aspek kehidupan, seperti fobia tertentu. Di ujung lain dari spektrum terdapat penyakit mental yang serius, yang mengakibatkan gangguan fungsional utama dan gangguan pada kehidupan sehari-hari. Ini termasuk gangguan seperti depresi berat, skizofrenia, dan gangguan bipolar, dan mungkin mengharuskan orang tersebut menerima perawatan di rumah sakit."],
+         "context": [""]
+        },
+        {"tag": "have_symptoms",
+         "patterns": ["Apa yang harus saya lakukan jika saya mengenal seseorang yang tampaknya memiliki gejala gangguan mental?" ],
+         "responses": ["kami menganjurkan mereka yang memiliki gejala untuk berbicara dengan teman dan anggota keluarga mereka dan mencari nasihat dari ahli kesehatan mental. Semakin cepat kondisi kesehatan mental diidentifikasi dan diobati, semakin cepat mereka dapat melanjutkan jalan menuju pemulihan. Jika Anda mengenal seseorang yang sedang mengalami masalah, jangan berasumsi bahwa masalah tersebut akan teratasi dengan sendirinya. Beri tahu mereka bahwa Anda peduli terhadap mereka, dan bahwa ada pilihan perawatan yang tersedia yang akan membantu mereka sembuh. Bicaralah dengan profesional kesehatan mental atau konselor jika menurut Anda teman atau anggota keluarga Anda mengalami gejala kondisi kesehatan mental. Jika orang tersayang yang terkena dampak mengetahui bahwa Anda mendukung mereka, mereka akan cenderung mencari bantuan."],
+         "context": [""]
+        },
+        {"tag": "treatment_options",
+         "patterns": ["Pilihan pengobatan apa yang tersedia?" ],
+         "responses": ["Sama seperti ada berbagai jenis obat untuk penyakit fisik, pilihan pengobatan yang berbeda juga tersedia untuk individu dengan penyakit mental. Perawatan bekerja secara berbeda untuk orang yang berbeda. Penting untuk menemukan apa yang terbaik untuk Anda"],
+         "context": ["treatment_options_by_patient"]
+        },
+        {"tag": "treatment_options_by_patient",
+         "patterns": [],
+         "responses": ["Loading treatment options result for Patient"],
+         "context": [""]
+        },
+        {"tag": "find_therapy",
+         "patterns": ["Di mana saya bisa pergi untuk mencari terapi pengobatan?" ],
+         "responses": ["Berbagai jenis terapi lebih efektif berdasarkan sifat kondisi dan/atau gejala kesehatan mental dan orang yang memilikinya (misalnya, anak-anak akan mendapat manfaat dari terapis yang berspesialisasi dalam kesehatan mental anak-anak). Namun, ada beberapa jenis perawatan dan terapi yang dapat membantu."],
+         "context": ["find_therapy_by_name"]
+        },
+        {"tag": "find_therapy_by_name",
+         "patterns": [],
+         "responses": ["Loading therapy details"],
+         "context": [""]
+        },
+        {"tag": "inpatient_search",
+         "patterns": ["Di mana saya bisa mencari perawatan rawat inap?" ],
+         "responses": ["Jika Anda atau seseorang yang Anda kenal sedang mengalami krisis, rawat inap dapat membantu. Perawatan rawat inap dapat membantu orang menstabilkan pengobatan baru, menyesuaikan diri dengan gejala baru, atau mendapatkan bantuan yang mereka butuhkan."],
+         "context": ["search_inpatient_by_name"]
+        },
+        {"tag": "search_inpatient_by_name",
+         "patterns": [],
+         "responses": ["Please provide hospital type"],
+         "context": ["search_hospital_by_type"]
+        },
+        {"tag": "search_hospital_by_type",
+         "patterns": [],
+         "responses": ["Loading hospital details"],
+         "context": [""]
+        }
+   ]
+}
